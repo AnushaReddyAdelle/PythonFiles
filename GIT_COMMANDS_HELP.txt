@@ -1,0 +1,50 @@
+**************************************************************************************************************************************************************
+**************************************************************************************************************************************************************
+Basic Commands
+===================================
+$ git init									--->	This initializes the git
+$ git clone https://github.com/AnushaReddyAdelle/DataAnalysis.git		--->	This clones the repository to the local system
+$ git status									--->	To check the status of the git ( If there are any files to add/commit )
+
+To add a file to the Git Repo
+===================================
+$ git add Hello.txt								--->	To add the file
+$ git commit -m "HelloFile to test"						--->	This commits the files with the comment as mentioned inside the "".
+$ git push origin master							--->	This command pushes the files to the GIT from the master branch.
+Username for 'https://github.com': AnushaReddyAdelle								( It asks for the Username and Password )
+
+To remove a file and commit in the Git Repo
+============================================
+$ git rm Hello.txt
+$ git add Hello.txt
+$ git commit -m "HelloFile is now removed"
+$ git push origin master
+
+Pull the code from the git
+=============================
+$ git pull 									--->	Gets the code from the hub and puts in the work area
+
+To discard the changes done in your file and get the content from git repository
+=================================================================================
+$ git checkout origin/master -- Hello.txt
+
+To get back the code that YOU have last pushed to the git
+================================================================
+$ git reset --hard origin/master
+
+To ignore few files in the local system while pushing to the hub
+=================================================================
+Create a hidden file with name .gitignore and just mention the file names that needs to be ignored.
+Rest all is the same.
+
+To create a new branch Level1
+===================================
+$ git checkout -b Level1		--->	Creates a new branch Level1
+$ git checkout master			--->	This command switches to master from Level1
+Switched to branch 'master'		
+$ git checkout Level1			--->	This command switches back to Level1 ( Note : -b is to be kept for creation of branch only )
+Switched to branch 'Level1'
+$ git merge Level1			--->	This command merges the Level1 branch with the branch from which this command is executed
+
+**************************************************************************************************************************************************************
+**************************************************************************************************************************************************************
