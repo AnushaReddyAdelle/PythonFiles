@@ -1,2 +1,1 @@
 Testing updates
-edited in git hub to test the hard reset option
